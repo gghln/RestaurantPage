@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("content"),t=document.createElement("h1"),n=document.createTextNode("This is a restaurant");t.appendChild(n),e.appendChild(t)}))})();
