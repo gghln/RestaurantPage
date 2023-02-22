@@ -20,18 +20,21 @@ function createWebsite(){
         //Home button
         const homeButton = document.createElement('button')
         homeButton.classList.add('button')
+        homeButton.setAttribute('id','homeButton')
         node = document.createTextNode('Home')
         homeButton.appendChild(node)
 
         //Menu button
         const menuButton = document.createElement('button')
         menuButton.classList.add('button')
+        menuButton.setAttribute('id','menuButton')
         node = document.createTextNode('Menu')
         menuButton.appendChild(node)
 
         //Contact button
         const contactButton = document.createElement('button')
         contactButton.classList.add('button')
+        contactButton.setAttribute('id','contactButton')
         node = document.createTextNode('Contact Us')
         contactButton.appendChild(node)
 

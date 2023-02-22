@@ -6,6 +6,34 @@ import './style.css'
 
 
 createWebsite()
-createHome()
-createMenu()
-createContact()
+document.addEventListener('DOMContentLoaded', () => {
+    
+    createHome()
+
+    let homeButton = document.querySelector('#homeButton')
+    homeButton.addEventListener('click', () => {
+        let currentContainer = document.querySelectorAll('.Container')
+        currentContainer.forEach(e => {
+            e.remove()
+        })
+        createHome()
+    })
+
+    let menuButton = document.querySelector('#menuButton')
+    menuButton.addEventListener('click', () => {
+        let currentContainer = document.querySelectorAll('.Container')
+        currentContainer.forEach(e => {
+            e.remove()
+        })
+        createMenu()
+    })
+
+    let contactButton = document.querySelector('#contactButton')
+    contactButton.addEventListener('click', () => {
+        let currentContainer = document.querySelectorAll('.Container')
+        currentContainer.forEach(e => {
+            e.remove()
+        })
+        createContact()
+    })
+})
